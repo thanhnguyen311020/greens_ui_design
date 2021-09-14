@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --green: #28ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+ 
+}
+
+*::selection{
+    background: var(--green);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    min-height: 200rem;
+    
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--green);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--green);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    width: 100%;
+    left: 0;
+   
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+header {
+ 
+    width: 100%;
+    background: #fff;
+    /* padding: 1rem 7%; */
+    
+    z-index: 1000;
+    /* box-shadow: var(--box-shadow); */
+}
+
+header .social-call{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-bottom: .1rem solid rgba(0,0,0,.1)
+}
+
+header .social-call .social  a{
+    margin: 0 .3rem;
+    color: rgba(0,0,0,.7);
+    font-size: 1.5rem;
+}
+
+.social-call .phone{
+    color: rgba(0,0,0,.7);
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+header .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background: #fff;
+    position: relative;
+  
+}
+
+header .nav.fix-nav{
+    position: fixed;
+    top: 0; left: 0; right:0;
+    box-shadow: var(--box-shadow); 
+    height: 8rem;
+    background: #fff;
+    animation: scrollTop 0.7s;
+   z-index: 1000;
+}
+
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navbar .active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+
+header .icons #menu-bars{
+    display: none;
+}
+
+/* banner section css */
+.banner{
+      display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    z-index: 1000;
+    /* background: ;
+    background-position: center;
+    background-size: cover; */
+}
+
+.banner .content{
+    flex: 1 1 40rem;
+    
+}
+
+.banner .image{
+    flex: 1 1 40rem;
+}
+
+.banner .image img{
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+
+.banner .content h3{
+    font-size: 5rem;
+    color: var(--black);
+   
+}
+
+.banner .content h3 span{
+    color: var(--green);
+}
+
+.banner .content p{
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes scrollTop{
+    0%{
+        top: -300px;
+
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+@keyframes float {
+    0%, 100%{
+        transform:translateY(0rem);
+    }
+
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+
+
+/* media queries */
+
+@media(max-width: 1080px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media(max-width: 900px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media(max-width: 800px){
+    
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .social-call{
+        display: none;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0; right:0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+        z-index: 10000;
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+        border-left: .5rem solid var(--green);
+    }
+}
+
+
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+}

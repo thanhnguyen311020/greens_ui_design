@@ -12,6 +12,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- lightSlide.css link -->
+    <link rel="stylesheet" href="css/lightSlider.css">
+
+    <!-- jquery  -->
+    <script src="js/jQuery.js"></script>
+    <!-- lightslider -->
+    <script src="js/lightslider.js"></script>
 </head>
 
 <body>
@@ -56,8 +63,7 @@
 
         <div class="content">
             <h3>Rau xanh chuẩn <span>oganic</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit modi sequi facilis exercitationem aspernatur
-                a suscipit perferendis laboriosam, voluptate cum!</p>
+            <p>Giảm giá khi mua hôm nay :)</p>
             <a href="#" class="btn">mua ngay</a>
         </div>
 
@@ -68,8 +74,167 @@
     </section>
 
 
+    <section class="category">
+
+        <ul id="autoWidth" class="cs-hidden">
+            <!-- box-1 -->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-1.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+            <!-- box-2 -->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-2.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+            <!-- box-3 -->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-3.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+
+            <!-- box-4 -->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-4.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+
+            <!-- box-5 -->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-5.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+            <!-- box-6-->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-6.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+            <!-- box-7-->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-7.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+            <!-- box-7-->
+            <li class="item">
+                <!-- Feature-box -->
+                <div class="feature-box">
+                    <a href="#">
+                        <img src="images/product-8.png" alt="">
+                    </a>
+                </div>
+                <!-- text------ -->
+                <span>Banana</span>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- section banner_deal starts -->
+
+    <section class="banner_sale_container">
+
+        <!-- <h1 class="heading">Khuyến mãi khủng đến <span>40%</span></h1> -->
+
+        <div class="banner_sale">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <h3>Giảm giá</h3>
+                <p>đến 45% với thành viên</p>
+                <a href="#" class="btn">Check out</a>
+            </div>
+        </div>
+        <div class="banner_sale">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <h3>Khuyến mãi</h3>
+                <p>các mặt hàng đến 20%</p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section banner_deal ends -->
+
+    <!-- section product starts-->
+
+    <section class="product">
+
+        <h1 class="heading">Sản phẩm <span>Bán chạy</span></h1>
+
+    </section>
+
+    <!-- section product ends  -->
+
+
+
+
+
+
+
+
+
+
+
     <!-- script custom link -->
     <script src="js/script.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

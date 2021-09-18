@@ -27,6 +27,21 @@ window.onscroll = () => {
     }
 }
 
+var payment = document.querySelector('.payment');
+
+function paymentBy(){
+//    document.getElementById('notecod').style.display = "block";
+    if(document.getElementById('paymentcod').checked ==true){
+        document.getElementById('notecod').style.display = "block";
+        document.getElementById('paypalbox').style.display = "none";
+    }
+     if(document.getElementById('paymentpaypal').checked ==true){
+        document.getElementById('paypalbox').style.display = "block";
+        document.getElementById('notecod').style.display = "none";
+    }
+//    alert("ok")
+}
+
 
 
 // nav.onscroll = () =>{
@@ -42,7 +57,7 @@ window.onscroll = () => {
 
 //  time deal
 
-let countDate = new Date('2021-09-16 21:58:10').getTime(); // xuất ra dãy số đại diện ngày tháng
+let countDate = new Date('2021-10-16 21:58:10').getTime(); // xuất ra dãy số đại diện ngày tháng
 console.log(countDate);
 function CountDown() {
 

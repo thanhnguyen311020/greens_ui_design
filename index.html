@@ -21,12 +21,14 @@
     <script src="js/jQuery.js"></script>
     <!-- lightslider -->
     <script src="js/lightslider.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
 
     <header>
-        <div class="social-call">
+        <div class="social-call" id="top">
             <div class="social">
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-twitter"></a>
@@ -431,85 +433,89 @@
 
     <!-- section deal ends -->
 
-    <section class="product_container" style="position: relative;">
+    <section class="_product_container" style="position: relative;">
 
 
 
-        <div class="box_container deal_product">
+        <div class="swiper box_container deal_product">
 
-            <div class="box" style="background: #fff;">
-                <span class="discount">33%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <!-- <a href="#" class="fas fa-share"></a> -->
-                    <a href="#" class="fas fa-shopping-cart"></a>
+            <div class="swiper-wrapper">
+
+                <div class="box swiper-slide" style="background: #fff;">
+                    <span class="discount">33%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-share"></a> -->
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <img src="images/product-1.png" alt="">
+                    <h3><a href="#">Banana</a></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">100.000 .đ <span>90.000 .đ</span></div>
                 </div>
-                <img src="images/product-1.png" alt="">
-                <h3><a href="#">Banana</a></h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                <div class="box swiper-slide" style="background: #fff;">
+                    <span class="discount">33%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-share"></a> -->
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <img src="images/product-1.png" alt="">
+                    <h3><a href="#">Banana</a></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">100.000 .đ <span>90.000 .đ</span></div>
                 </div>
-                <div class="price">100.000 .đ <span>90.000 .đ</span></div>
+                <div class="box swiper-slide">
+                    <span class="discount">33%</span>
+                    <div class="icons2">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <img src="images/product-2.png" alt="">
+                    <h3><a href="#">Banana</a></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">100.000 .đ <span>90.000 .đ</span></div>
+                </div>
+                <div class="box swiper-slide">
+                    <span class="discount">33%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-share"></a> -->
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                    <img src="images/product-3.png" alt="">
+                    <h3><a href="#">Banana</a></h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">100.000 .đ <span>90.000 .đ</span></div>
+                </div>
+               
+
             </div>
-            <div class="box">
-                <span class="discount">33%</span>
-                <div class="icons2">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                </div>
-                <img src="images/product-2.png" alt="">
-                <h3><a href="#">Banana</a></h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="price">100.000 .đ <span>90.000 .đ</span></div>
-            </div>
-            <div class="box">
-                <span class="discount">33%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <!-- <a href="#" class="fas fa-share"></a> -->
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                </div>
-                <img src="images/product-3.png" alt="">
-                <h3><a href="#">Banana</a></h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="price">100.000 .đ <span>90.000 .đ</span></div>
-            </div>
-            <div class="box">
-                <span class="discount">33%</span>
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <!-- <a href="#" class="fas fa-share"></a> -->
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                </div>
-                <img src="images/product-4.png" alt="">
-                <h3><a href="#">Banana</a></h3>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="price">100.000 .đ <span>90.000 .đ</span></div>
-            </div>
-
 
         </div>
 
@@ -519,65 +525,98 @@
 
     <!-- reivew section starts -->
 
+
+
+
     <section class="review" id="review">
 
-        <h1 class="heading">Đánh giá từ <span>khách hàng</span></h1>
 
-        <div class="review-box">
+        <h1 class="heading"> what they say </h1>
 
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-1.png" alt="">
-                    <div class="user-info">
-                        <h3>Jone deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="user-info">
+                            <h3>john 1</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus
+                        aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis
+                        laborum aspernatur quibusdam. Ipsum, magni.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam praesentium obcaecati
-                    repudiandae nisi exercitationem illo ipsam, veritatis culpa voluptatum.</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-2.png" alt="">
-                    <div class="user-info">
-                        <h3>Jone deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo 2</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus
+                        aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis
+                        laborum aspernatur quibusdam. Ipsum, magni.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam praesentium obcaecati
-                    repudiandae nisi exercitationem illo ipsam, veritatis culpa voluptatum.</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-3.png" alt="">
-                    <div class="user-info">
-                        <h3>Jone deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-3.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo 3</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus
+                        aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis
+                        laborum aspernatur quibusdam. Ipsum, magni.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quam praesentium obcaecati
-                    repudiandae nisi exercitationem illo ipsam, veritatis culpa voluptatum.</p>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-4.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus
+                        aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis
+                        laborum aspernatur quibusdam. Ipsum, magni.</p>
+                </div>
+
             </div>
 
         </div>
@@ -636,7 +675,10 @@
 
     <!-- footer section ends -->
 
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"> </a>
+
     <!-- script custom link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/jqueryScript.js"></script>

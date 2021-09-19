@@ -25,6 +25,13 @@ window.onscroll = () => {
         nav.classList.remove('fix-nav');
 
     }
+
+    
+    if(window.scrollY > 60){
+        document.querySelector('#scroll-top').classList.add('active');
+    }else{
+        document.querySelector('#scroll-top').classList.remove('active');
+    }
 }
 
 var payment = document.querySelector('.payment');
@@ -89,4 +96,56 @@ function CountDown() {
 setInterval(function () {
     CountDown();
 }, 1000)
+
+
+
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+      delay: 200000,
+      disableOnInteraction: false,
+    },
+    loop:true,
+    breakpoints: {
+      0:{
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1366: {
+        slidesPerView: 3,
+      },
+    },
+  });
+var swiper = new Swiper(".deal_product", {
+    spaceBetween: 30,
+    slidesPerView: 4,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop:true,
+    // breakpoints: {
+    //   0:{
+    //     slidesPerView: 2,
+    //   },
+    //   640: {
+    //     slidesPerView: 3,
+    //   },
+    //   768: {
+    //     slidesPerView: 4,
+    //   },
+    //   1366: {
+    //     slidesPerView: 3,
+    //   },
+    // },
+  });
+
 

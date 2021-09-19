@@ -1,0 +1,126 @@
+:root {
+    --main-bg-color: #28a745;
+    --main-text-color: #fff;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #c1efde;
+  }
+  
+  .primary-text {
+    color: var(--main-text-color);
+  }
+  
+  .second-text {
+    color: var(--second-text-color);
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+   
+  }
+  
+  .home{
+    color: var(--main-text-color);
+    text-decoration: none;
+   
+  }
+  .home:hover{
+    color: var(--main-text-color);
+    text-decoration: none;
+  }
+  
+  .secondary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .rounded{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: .5rem !important;
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  
+  ._siderbar{
+    background: var(--main-bg-color);
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+    background-image: linear-gradient(
+      to right,
+      #baf3d7,
+      #c2f5de,
+      #cbf7e4,
+      #d4f8ea,
+      #ddfaef
+    );
+  }
+  
+  .navbar{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+    background-color: #fff;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+    color:#28a745;  
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+  }
+  
+  .list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+  .links:hover{
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  

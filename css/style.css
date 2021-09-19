@@ -151,6 +151,75 @@ body .btn:hover{
     color: #fff;
 }
 
+
+
+.search-bar{
+    width:100%;
+    height: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display:flex;
+    justify-content: center;
+    box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+    animation: search 0.7s;
+}
+
+.search-bar .seacrh-cancel:hover{
+    color: var(--main);
+    transition: all ease .3s;
+}
+
+
+.search-bar .search-input{
+    width:90%;
+    border-bottom: 2px solid #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    margin-top:20px;
+
+
+}
+
+.search-bar .search-input input{
+    width: 100%;
+    padding:30px;
+    border:none;
+    outline: none;
+    font-size: 2rem;
+    margin:20px;
+    padding:0px 20px;
+}
+
+.search-bar .search-cancel{
+    color:#272727;
+    font-size: 2rem;
+    padding-right:40px;
+}
+
+.search-bar{
+    display: none;
+}
+.search-bar-active{
+    display: flex;
+}
+
+@keyframes search{
+    0%{
+        bottom: -300px;
+
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+
 header {
  
     width: 100%;
@@ -232,8 +301,9 @@ header .navbar a:hover{
     background: var(--main);
 }
 
-header .icons i,
-header .icons a{
+header .icons>i,
+header .icons>a,
+header .icons>li{
     cursor: pointer;
     margin-left: .5rem;
     height: 4.5rem;
@@ -244,14 +314,90 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: #eee;
+    position: relative;
+    text-align: center;
 }
 
-header .icons i:hover,
-header .icons a:hover{
+header .icons .drop-menu ul{
+display: none; 
+    
+    
+}
+
+header .nav.fix-nav .drop-menu:hover ul{
+    top:80%;
+  
+}
+
+header .icons .drop-menu:hover ul{
+    display: block;
+    position: absolute;
+    top:100%;
+    left: -170%;
+    width: 23rem;
+
+    border-radius: 0;
+    z-index: 1000;
+    padding-top: 3rem;
+}
+
+header .icons .drop-menu ul li a{
+    border-radius: 0;
+    padding: 0rem 1rem;
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    background-color: #fff;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 1.rem;
+}
+
+/* header .icons a ul li a{
+    width: 100%;
+    display: block;
+    border-radius: 0%;
+    position: absolute;
+    top: 1rem;
+} */
+
+
+
+header .icons a span{
+    position: absolute;
+    top: 2%;
+    right: -1%;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;  
+    font-weight: normal;  
+    background:var(--main);
+}
+
+header .icons a:hover span{
+    background-color:#eee;
+    color: var(--main);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+header .icons>i:hover,
+header .icons>a:hover
+{
     color: #fff;
     background: var(--main);
     transform: rotate(360deg);
 }
+
+header .icons>li:hover{
+    color: #fff;
+    background: var(--main);
+}
+
 
 
 header .icons #menu-bars{
@@ -1796,6 +1942,113 @@ body ._login {
     color: var(--main);
 }
 
+
+/* ************ Profile Page CSS *************** */
+
+._profile{
+    margin-top: 5rem;
+}
+
+.product-container{
+    justify-content: space-between;
+}
+
+.profile-container .box-info{
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 2rem 1rem;
+    max-height: 65rem;
+}
+
+.profile-container .box-info h1{
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.profile-container .box-info img{
+    border-radius: 50%;
+    width: 60%;
+    max-width: 70rem;
+    margin: 1rem;
+   border: 1rem solid #ececec;
+}
+
+.profile-container .box-info .info{
+    margin: 1rem 0;
+    border-top: .5rem solid #ececec;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.profile-container .box-info .info span{
+    font-size: 1.8rem;
+    text-transform: none;
+    color: var(--light-color);
+    padding: .5rem .5rem;
+}
+
+.profile-container .box-info .info span small{
+    color: goldenrod;
+}
+
+.profile-container .box-info .info span i{
+    margin-right: .5rem;
+    font-size: 2rem;
+}
+
+
+.profile-container .box-order{
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 2rem 1rem;
+    margin-left: 3rem;
+    /* max-height: 70rem; */
+}
+
+.profile-container .box-order table{
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.profile-container .box-order table th{
+    padding: 1rem .5rem;
+    border-bottom: .3rem solid #ececec;
+}
+
+.profile-container .box-order table td{
+    border-bottom: .1rem solid #ececec;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.profile-container .box-order table tr:hover{
+    background-color: #ececec;
+}
+
+.profile-container .box-order table td img{
+    max-width: 5rem;
+}
+.profile-container .box-order table td:last-child{
+    color: var(--main);
+    font-weight: 500;
+}
+
+.box-order .navigation{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.box-order .navigation a{
+    border: .1rem solid #ececec;
+    padding: 1rem .8rem;
+}
 
 
 

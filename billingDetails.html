@@ -52,13 +52,48 @@
             <div class="icons">
 
                 <i class="fas fa-bars" id="menu-bars"></i>
-                <i class="fas fa-search" id="search-icon"></i>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="card.html" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-user-alt"></a>
+                <i class="fas fa-search search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart">
+                    <span>2</span>
+                </a>
+                <a href="card.html" class="fas fa-shopping-cart">
+                    <span>2</span>
+                </a>
+                <li class="fas fa-user-alt drop-menu">
+                    <ul>
+                        <li>
+                            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a>
+                        </li>
+                        <li>
+                            <a href="register.html"><i class="fas fa-sign-in-alt"></i> Đăng Ký</a>
+                        </li>
+                        <li>
+                            <a href="order.html"><i class="fas fa-tasks"></i> Quản lý đơn hàng</a>
+                        </li>
+                        <li>
+                            <a href="account.html"><i class="fas fa-user-cog"></i> Trang cá nhân</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-sign-in-alt"></i> Đăng Xuất</a>
+                        </li>
+                    </ul>
+                </li>
+                <a href="login.html" class="fas fa-user-alt"></a>
             </div>
         </div>
     </header>
+
+    <div class="search-bar">
+        <!-- search-input -->
+        <div class="search-input">
+            <!-- input -->
+            <input type="text" placeholder="Search For Product">
+            <!-- cancel-btn -->
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
 
     <div class="titlePage">
         <h1>Chi tiết hóa đơn</h1>
@@ -228,19 +263,7 @@
     <!--  -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
-    <script>
-
-        $(document).ready(function () {
-            $('#autoWidth').lightSlider({
-                autoWidth: true,
-                loop: true,
-                onSliderLoad: function () {
-                    $('#autoWidth').removeClass('cS-hidden');
-                }
-            });
-        });
-
-    </script>
+    <script src="js/jqueryScript.js"></script>
 </body>
 
 </html>

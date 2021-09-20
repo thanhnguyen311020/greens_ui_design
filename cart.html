@@ -94,140 +94,191 @@
         </div>
     </div>
 
-    <div class="titlePage">
+    <!-- <div class="titlePage">
         <h1>Giỏ hàng</h1>
         <div class="link">
             <a href="#">Trang chủ</a> - <a href="#">Giỏ hàng</a>
         </div>
-    </div>
+    </div> -->
 
 
     <section class="shopping-cart">
 
-        <div class="cart-container">
+        <div class="cart-container row">
 
-            <table>
-
+            <table class="box col-10 m-auto">
                 <tr>
+                    <th>Mã </th>
                     <th>Sản phẩm</th>
                     <th>Giảm giá</th>
-                    <th>Số Lượng</th>
+                    <th>Số lượng</th>
                     <th>Thành tiền</th>
-                </tr>
+                    <th></th>
+                    </te>
 
                 <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/product-1.png" alt="">
-                            <div>
-                                <p>Chuối ngon vl </p>
-                                <small>Giá: 50.000 .đ</small>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <span>12%</span>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td>50.000 .đ</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/product-3.png" alt="">
-                            <div>
-                                <p>Cam ngon vc - 1kg </p>
-                                <small>Giá: 50.000 .đ</small>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <span>12%</span>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td>50.000 .đ</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/product-4.png" alt="">
-                            <div>
-                                <p>Sửa cũng ngon - 500ml </p>
-                                <small>Giá: 50.000 .đ</small>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <span>0%</span>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td>50.000 .đ</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/product-2.png" alt="">
-                            <div>
-                                <p>Cà chua - 200g </p>
-                                <small>Giá: 50.000 .đ</small>
-                                <br>
-                                <a href="#">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <span>5%</span>
-                    </td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td>50.000 .đ</td>
-                </tr>
+                    <td>0584957</td>
+                    <td class="product-info">
 
+                        <img src="images/product-3.png" alt="">
+                        <div>
+                            <div class="product_name"><a href="#">Chuối Quảng lam 1kgasdasdasdasdasasdasdasdasdasd</a>
+                            </div>
+                            <span>120.000.đ</span>
+
+                        </div>
+                    </td>
+
+                    <td style="text-align: center;">10%</td>
+                    <td>
+                        <div class="quantity-container">
+                            <button  id="decrement" onclick="stepper(this)"> - </button>
+                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
+                            <button  id="increment" onclick="stepper(this)"> + </button>
+                        </div>
+                    </td>
+                    <td class="_amount">
+                        25.000.đ
+                    </td>
+                    <td>
+                        <a href="#" class="far fa-times-circle"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0584957</td>
+                    <td class="product-info">
+
+                        <img src="images/product-4.png" alt="">
+                        <div>
+                            <div class="product_name"><a href="#">Chuối Quảng Lam 1kgasdasdasdasdasasdasdasdasdasd</a>
+                            </div>
+                            <span>120.000.đ</span>
+
+                        </div>
+                    </td>
+
+                    <td style="text-align: center;">10%</td>
+                    <td>
+                        <div class="quantity-container">
+                            <button  id="decrement" onclick="stepper(this)"> - </button>
+                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
+                            <button  id="increment" onclick="stepper(this)"> + </button>
+                        </div>
+                    </td>
+                    <td class="_amount">
+                        25.000.đ
+                    </td>
+                    <td>
+                        <a href="#" class="far fa-times-circle"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0584957</td>
+                    <td class="product-info">
+
+                        <img src="images/product-2.png" alt="">
+                        <div>
+                            <div class="product_name"><a href="#">Chuối Quảng Lam 1kgasdasdasdasdasasdasdasdasdasd</a>
+                            </div>
+                            <span>120.000.đ</span>
+
+                        </div>
+                    </td>
+
+                    <td style="text-align: center;">10%</td>
+                    <td>
+                        <div class="quantity-container">
+                            <button  id="decrement" onclick="stepper(this)"> - </button>
+                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
+                            <button  id="increment" onclick="stepper(this)"> + </button>
+                        </div>
+                    </td>
+                    <td class="_amount">
+                        25.000.đ
+                    </td>
+                    <td>
+                        <a href="#" class="far fa-times-circle"></a>
+                    </td>
+                </tr>
             </table>
-            <a href="#" class="btn" style="text-transform: none; border-radius: 0;"><- Tiếp tục mua sắm</a>
-            <div class="total-price">
+
+            <div class="col-10 m-auto _checkout-container">
                 <div class="voucher">
-                    <h3>Mã giảm giá</h3>
-               
-                       <div>
-                        <input type="email" name="" id="" placeholder="Mã giảm giá">
-                        <a href="#" class="">Áp dụng mã</a>
-                       </div>
-                    
+                    <h4>Mã giảm giá</h4>
+                    <div class="box">
+                        <input type="text">
+                        <button class="btn">Áp dụng mã</button>
+                    </div>
                 </div>
-                <table>
-                    <tr>
-                        <td>Tạm Tính</td>
-                        <td>
-                        <td> 20000 VND</td>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Giảm Giá:</td>
-                        <td colspan="2">
-                            0%
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="">Tổng Tiền</td>
-                        <td colspan="2" style="color: #FF2300;;" class="">20000
-                            VND</td>
-                    </tr>
-                    <tr >
-                        <td colspan="3">
-                            <a href="#" class="btn">Thanh toán</a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="checkout-box">
+                    <table>
+                        <tr>
+                            <th>Tạm tính</th>
+                            <td>200000.đ</td>
+                        </tr>
+                        <tr>
+                            <th>Giảm giá</th>
+                            <td>20.000.đ</td>
+                        </tr>
+                        <tr>
+                            <th>Voucher</th>
+                            <td>20.000.đ</td>
+                        </tr>
+                        <tr>
+                            <th class="total_price">Tổng tiền</th>
+                            <td class="total_price">20.0000.đ</td>
+                        </tr>
+                    </table>
+                    <a href="billingDetails.html" class="btn_checkout">Tiền hành thanh toán</a>
+                </div>
             </div>
-           
+        </div>
+        </div>
+
+
+
+        </div>
+        <!-- <a href="#" class="btn" style="text-transform: none; border-radius: 0;">
+                <- Tiếp tục mua sắm</a>
+                    <div class="total-price">
+                        <div class="voucher">
+                            <h3>Mã giảm giá</h3>
+
+                            <div>
+                                <input type="email" name="" id="" placeholder="Mã giảm giá">
+                                <a href="#" class="">Áp dụng mã</a>
+                            </div>
+
+                        </div>
+                        <table>
+                            <tr>
+                                <td>Tạm Tính</td>
+                                <td>
+                                <td> 20000 VND</td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Giảm Giá:</td>
+                                <td colspan="2">
+                                    0%
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="">Tổng Tiền</td>
+                                <td colspan="2" style="color: #FF2300;;" class="">20000
+                                    VND</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="#" class="btn">Thanh toán</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div> -->
+
         </div>
 
     </section>

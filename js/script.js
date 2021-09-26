@@ -41,45 +41,43 @@ function paymentBy() {
   if (document.getElementById('paymentcod').checked == true) {
     document.getElementById('notecod').style.display = "block";
     document.getElementById('paypalbox').style.display = "none";
+    document.getElementById('alert-checkout').style.display = "none";
   }
   if (document.getElementById('paymentpaypal').checked == true) {
     document.getElementById('paypalbox').style.display = "block";
     document.getElementById('notecod').style.display = "none";
+    document.getElementById('alert-checkout').style.display = "none";
   }
   //    alert("ok")
 }
 
-//  Quantity 
-var myInput = document.getElementById('quantity');
-function stepper(btn) {
-  let id = btn.getAttribute("id");
-  let min = myInput.getAttribute("min");
-  let max = myInput.getAttribute("max");
-  let step = myInput.getAttribute("step");
-  let val = myInput.getAttribute("value");
-  // alert("ok")
-  let calcStep = (id == "increment") ? (step * 1) : (step * - 1)
-  let newValue = parseInt(val) + calcStep;
-  if (newValue >= min && newValue <= max) {
-    myInput.setAttribute("value", newValue);
-  }
-  // console.log(id, calcStep);
-}
+//  Quantity buttom + -
+var incrementQty;
+var decrementQty;
+var plusBtn = $('.cart-qty-plus');
+var minusBtn = $('.cart-qty-minus');
+
+var incrementQty = plusBtn.click(function(){
+  var $n = $(this)
+    .parent(".quantity-container")
+    .find(".qty");
+    $n.val(Number($n.val()) + 1);
+
+})
 
 
-// nav.onscroll = () =>{
+var decrementQty = minusBtn.click(function(){
+  var $n = $(this)
+    .parent(".quantity-container")
+    .find(".qty");
+    var QtyVal = Number($n.val());
+    if(QtyVal > 0){
+      $n.val(QtyVal - 1);
+    }
+})
 
-//     // if(nav.scrollTop >= 100){
-//     //     nav.classList.add('fix-nav');
-//     //     console.log("ok");
-//     // }else{
-//     //     nav.classList.remove('fix-nav');
-//     // }
-//     console.log("alo");
-// }
 
-//  time deal
-
+// Time out deal
 let countDate = new Date('2021-10-16 21:58:10').getTime(); // xuất ra dãy số đại diện ngày tháng
 console.log(countDate);
 function CountDown() {

@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/siteStyle/billStyle.css">
     <!-- lightSlide.css link -->
     <link rel="stylesheet" href="css/lightSlider.css">
     <!-- boostrap -->
@@ -111,7 +112,7 @@
         <div class="row bill-container">
           
             <div class="col-7 box-info ">
-                <h3>Thông tin đặt hàng</h3>
+                <h3>Thông tin đặt hàng <a href="#">{Thay đổi địa chỉ giao hàng}</a></h3>
                 <form action="#" method="post">
 
                     <div class="form-group">
@@ -187,7 +188,9 @@
                         </label>
                     </div>
                     <div style="display: none;" class="note" id="notecod">
-                       <span> Vui lòng chuẩn bị số tiền mặt tương ứng</span>
+                        
+                       <span> Vui lòng chuẩn bị số tiền mặt tương ứng</span><br>
+                       <button class="_btn" style="border-radius: 0;" value="đặt hàng">Đặt hàng   </button>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
@@ -201,9 +204,11 @@
                         voluptates facilis aspernatur maxime ipsa asperiores et nobis minima quos optio, distinctio
                         dicta dolor, itaque sit natus necessitatibus.
                     </div>
+
+                    <small id="alert-checkout" style="color: red; font-size: 1.4rem;">* Chọn phương thức thanh toán</small>
                 </div>
 
-                <button class="btn" style="border-radius: 0;" value="đặt hàng">Đặt hàng   </button>
+             
             </div>
 
         </div>

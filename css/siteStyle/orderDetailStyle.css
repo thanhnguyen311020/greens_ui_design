@@ -1,0 +1,173 @@
+
+/* ****************** Order Detail Page CSS ************************ */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+
+.orderDetail-container form{
+    /* background-color: #ececec; */
+    box-shadow: var(--box-shadow);
+      padding: 1rem;
+  }
+  
+  .orderDetail-container form input,
+  .orderDetail-container form textarea{
+      font-size: 1.6rem;
+      border: .1rem solid #ececec;
+      resize: none;
+      text-transform: none;
+  }
+  
+  .orderDetail-container form input:last-child{
+      color:var(--main);
+      font-weight: 600;
+  }
+  .orderDetail-container form input:focus,
+  .orderDetail-container form textarea:focus{
+      outline: none;
+      box-shadow:none !important;
+      border:.1rem solid #ccc !important;
+  
+  }
+  .orderDetail-container form label{
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: none;
+      padding: 1rem 0rem 0rem 0rem;
+  }
+  
+  /* Table  */
+  .orderDetail-container table td:first-child{
+      max-width: 2.5rem;
+  }
+  .orderDetail-container table th{
+      border-bottom: .5rem solid #eaeaea;
+  }
+  
+  .orderDetail-container table th,
+  .orderDetail-container table td{
+      font-size: 1.7rem;
+      height: 2rem;
+      padding: 1rem;
+      vertical-align: middle;
+      border-bottom: .1rem solid #ececec;
+  }
+  .orderDetail-container table td h4{
+      text-transform: none;
+  }
+  
+  .orderDetail-container table td img{
+      width: 100%;
+      max-width: 8rem;
+  }
+  
+  ._orderDetail>a{
+      border-radius: 0;
+      font-size: 1.5rem;
+  }
+
+  .orderDetail-container table .ratting-btn{
+      text-align: center;
+  }
+
+  .orderDetail-container table .ratting-btn button{
+      color: #666;
+      background-color: gold;
+      padding: .5rem 1rem;
+      font-size: 1.5rem;
+      font-weight: normal;
+      vertical-align: middle;
+      border-radius: 5rem;line-height: 1;
+  }
+
+
+
+.rate-cotainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+}
+
+.rating-wrap{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.rating-wrap .content{
+   display: flex;
+   justify-content: center;
+
+}
+
+#rating-value{
+    width: 100px;
+margin: auto;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: inset 0 0 2px 1px rgba(46, 284, 113, .2);
+
+}
+
+/* styling star rating */
+.rating{
+    border: none;
+    float: left;
+
+}
+
+.rating > input{
+    display: none;
+}
+
+.rating > label:before{
+    content: '\f005';
+    font-family: FontAwesome;
+    margin: 5px;
+    font-size: 2.5rem;
+    display: inline-block;
+    cursor: pointer;
+    /* color: black; */
+}
+
+ .rating > .half:before{
+    content: '\f089';
+    position: absolute;
+    cursor: pointer;
+}
+
+.rating > label{
+    color: #ddd;
+    float: right;
+    cursor: pointer;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label{
+    color: #2ce679;
+}
+
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{
+    color:  #2ddc76;
+}
+
+.comment textarea{
+    width: 100%;
+    background-color: #ececec;
+    padding: .5rem 1rem;
+   font-size: 2rem;
+   text-transform: none;
+   resize: none;
+}
+
+
+
+
+

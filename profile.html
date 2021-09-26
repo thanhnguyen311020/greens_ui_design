@@ -12,8 +12,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/siteStyle/profileStyle.css">
     <!-- lightSlide.css link -->
     <link rel="stylesheet" href="css/lightSlider.css">
+
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -119,7 +121,8 @@
                     <span><i class="fas fa-envelope-square"></i> LanNguyen@gmail.com</span>
                     <span><i class="fas fa-map-marker-alt"></i><small>{mặc định}</small> Số 92 Trần Xuân Lê, phường Hòa Khê, quận Thanh Khê, Đà Nẵng</span>
                 </div>
-                <button class="btn">Cập Nhập Hồ Sơ</button>
+                <!-- <button class="_btn">Cập Nhập Hồ Sơ</button> -->
+                <button type="button" class="_btn" data-toggle="modal" data-target=".bd-example-modal-lg">Cập nhập hồ sơ</button>
             </div>
 
             <div class="col-7 box-order">
@@ -281,6 +284,28 @@
     </section>
 
     <!-- footer section ends -->
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thông tin địa chỉ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+          </div>
+        </div>
+      </div>
+
 
     <!-- script custom link -->
     <script src="js/script.js"></script>

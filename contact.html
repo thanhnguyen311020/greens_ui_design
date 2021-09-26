@@ -12,16 +12,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/siteStyle/addressStyle.css">
+    <!-- contact style -->
+    <link rel="stylesheet" href="css/siteStyle/contactStyle.css">
     <!-- lightSlide.css link -->
     <link rel="stylesheet" href="css/lightSlider.css">
     <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- jquery  -->
     <script src="js/jQuery.js"></script>
     <!-- lightslider -->
     <script src="js/lightslider.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -60,9 +63,9 @@
                 <a href="cart.html" class="fas fa-shopping-cart">
                     <span>2</span>
                 </a>
-                
+
                 <li class="fas fa-user-alt drop-menu">
-                  
+
                     <ul>
                         <li>
                             <a href="login.html"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a>
@@ -92,7 +95,7 @@
         <div class="search-input">
             <!-- input -->
             <input type="text" placeholder="Search For Product">
-            <!-- cancel-._._._._._btn -->
+            <!-- cancel-btn -->
             <a href="javascript:void(0);" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
@@ -100,79 +103,92 @@
     </div>
 
     <div class="titlePage">
-        <h1>Quản lý địa chỉ</h1>
+        <h1>Liên Hệ</h1>
         <div class="link">
-            <a href="#">Trang chủ</a> - <a href="#">Trang cá nhân</a> - <a href="#">trang cá nhân</a>
+            <a href="#">Trang chủ</a> - <a href="#">Liên hệ với chúng tôi</a>
         </div>
     </div>
 
+    <section class="contact">
 
+        <div class="map-container row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30673.338928026023!2d108.17258534237776!3d16.05680248045082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421907f4e404e3%3A0xdf90a41801904e48!2zVGhhbmggS2jDqiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1632631471278!5m2!1svi!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <section class="_address">
-        <div class="alert alert-success" role="alert">
-            <i class="fas fa-check-circle"></i> This is a success alert—check it out!
-          </div>
-        <div class="alert alert-danger" role="alert">
-            <i class="fas fa-exclamation-circle"></i> This is a success alert—check it out!
-          </div>
+        </div>
 
-       
-        <div class="row">
-            <div class="col-6 box-address">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Địa chỉ mặc định</h3>
-                        <a href="#" class="fas fa-edit"></a>
+   
+
+        <div class="contact_container row mt-4">
+
+            <div class="col-md-4 box">
+                <div class="contact-info ">
+                    <span><i class="fas fa-home"></i></span>
+                    <div class="info">
+                        <h3>12 Trần Hưng Đạo Thanh Khê Đà Nẵng</h3>
+                        <p>Hãy đến với giang hàng của chúng tôi</p>
                     </div>
-                    <div class="card-body">
-                        <h4>Lanvn@gmail.com</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem molestiae
-                            nobis eum voluptatem cumque expedita alias quisquam vero! Alias, nesciunt?</p>
+                </div>
+                <div class="contact-info ">
+                    <span><i class="fas fa-headphones-alt"></i></span>
+                    <div class="info">
+                        <h3>
+                            <a href="tel:+08574634738">(+84) 0475847389</a>
+                        </h3>
+                        <p>Hoạt động từ 7:30AM đến 9:00PM</p>
                     </div>
-
+                </div>
+                <div class="contact-info ">
+                    <span><i class="far fa-envelope"></i></span>
+                    <div class="info">
+                        <h3>
+                            <a style="text-transform: none;" href="mailto:supportVGreens@gmail.com">supportVGreens@gmail.com</a>
+                        </h3>
+                        <p>Giải đáp mọi thắc mắt</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 box-address">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Địa chỉ mặc định</h3>
-                        <a href="#" class="fas fa-edit"></a>
-                    </div>
-                    <div class="card-body">
-                        <h4>Lanvn@gmail.com</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem molestiae
-                            nobis eum voluptatem cumque expedita alias quisquam vero! Alias, nesciunt?</p>
-                        <a href="#">Đặt làm địa chỉ mặt định</a>
+            <div class="col-md-8">
+
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="form-group mb-4">
+                                <input type="text" class="form-control" name="fullname" id="fullname"
+                                    aria-describedby="helpId" placeholder="Họ và tên">
+                                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    aria-describedby="helpId" placeholder="Email">
+                                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    aria-describedby="helpId" placeholder="chủ đề">
+                                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="form-group">
+                              
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="6"></textarea>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-            </div>
-            <div class="col-6 box-address">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Địa chỉ mặc định</h3>
-                        <a href="#" class="fas fa-edit"></a>
-                    </div>
-                    <div class="card-body">
-                        <h4>Lanvn@gmail.com</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem molestiae
-                            nobis eum voluptatem cumque expedita alias quisquam vero! Alias, nesciunt?</p>
-                        <a href="#">Đặt làm địa chỉ mặt định</a>
-                    </div>
+                    <div class="form-group text-center text-md-right ">
+                        <button type="submit" class="_btn">Gửi mail</button>
 
-                </div>
-            </div>
-           
-            <div class="col-6 box-address">
-                <div class="card button-container">
-                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">Thêm địa chỉ mới...</button>
+                    </div>
+                </form>
 
-                </div>
             </div>
         </div>
 
     </section>
-
 
     <!-- footer sction starts -->
 
@@ -223,35 +239,12 @@
 
     <!-- footer section ends -->
 
-    <!-- Modal -->
-
-
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thông tin địa chỉ</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-        </div>
-      </div>
-    </div>
-
+    <a href="#top" class="fas fa-angle-up" id="scroll-top"> </a>
 
     <!-- script custom link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <!--  -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-
     <script src="js/jqueryScript.js"></script>
 </body>
 

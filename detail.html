@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/siteStyle/productDetail.css">
+    <link rel="stylesheet" href="css/siteStyle/cartStyle.css">
     <!-- lightSlide.css link -->
     <link rel="stylesheet" href="css/lightSlider.css">
     <!-- boostrap -->
@@ -119,8 +121,12 @@
                     <h5 class="availibity">Tình trạng: <span> còn hàng</span></h5>
                 </div>
                 <div class="quantity">
-                    <input type="number" min="1" value="1">
-                    <a href="#" style="height: 100%;" class="btn">Thêm vào giỏ hàng</a>
+                    <div class="quantity-container">
+                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                        <input type="text" name="qty" min="0" value="0" class="qty form-control">
+                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                    </div>
+                    <a href="#" style="height: 100%;" class="_btn">Thêm vào giỏ hàng</a>
                 </div>
                 <h3>Thông tin sản phẩm <i class="fas fa-indent"></i></h3>
 
@@ -136,7 +142,7 @@
 
     <!-- rate-and-review section -->
 
-    <section class="product_description_area">
+    <section class="product_description_area mt-4">
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
@@ -346,7 +352,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" value="submit" class="btn primary-btn">Submit Now</button>
+                                        <button type="submit" value="submit" class="_btn primary-btn">Submit Now</button>
                                     </div>
                                 </form>
                             </div>
@@ -391,7 +397,7 @@
                                 <div class="review_item">
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/review-1.png" alt="">
+                                            <img src="images/pic-1.png" alt="">
                                         </div>
                                         <div class="media-body">
                                             <h4>Blake Ruiz</h4>
@@ -411,7 +417,7 @@
                                 <div class="review_item">
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/review-2.png" alt="">
+                                            <img src="images/pic-2.png" alt="">
                                         </div>
                                         <div class="media-body">
                                             <h4>Blake Ruiz</h4>
@@ -431,7 +437,7 @@
                                 <div class="review_item">
                                     <div class="media">
                                         <div class="d-flex">
-                                            <img src="img/product/review-3.png" alt="">
+                                            <img src="images/pic-3.png" alt="">
                                         </div>
                                         <div class="media-body">
                                             <h4>Blake Ruiz</h4>
@@ -480,7 +486,7 @@
                                             id="textarea" cols="30" rows="5" placeholder="Enter Message"></textarea>
                                     </div>
                                     <div class="form-group text-center text-md-right mt-3">
-                                        <button type="submit" class="button button--active button-review">Submit
+                                        <button type="submit" class="button _btn button--active button-review">Submit
                                             Now</button>
                                     </div>
                                 </form>

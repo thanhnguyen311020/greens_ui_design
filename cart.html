@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/siteStyle/cartStyle.css">
     <!-- lightSlide.css link -->
     <link rel="stylesheet" href="css/lightSlider.css">
     <!-- boostrap -->
@@ -90,7 +91,7 @@
         <div class="search-input">
             <!-- input -->
             <input type="text" placeholder="Search For Product">
-            <!-- cancel-btn -->
+            <!-- cancel-_btn -->
             <a href="javascript:void(0);" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
@@ -142,9 +143,9 @@
                     <td style="text-align: center;">10%</td>
                     <td>
                         <div class="quantity-container">
-                            <button  id="decrement" onclick="stepper(this)"> - </button>
-                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
-                            <button  id="increment" onclick="stepper(this)"> + </button>
+                           <button class="cart-qty-plus" type="button" value="+">+</button>
+                           <input type="text" name="qty" min="0" value="0" class="qty form-control">
+                           <button class="cart-qty-minus" type="button" value="-">-</button>
                         </div>
                     </td>
                     <td class="_amount">
@@ -170,9 +171,9 @@
                     <td style="text-align: center;">10%</td>
                     <td>
                         <div class="quantity-container">
-                            <button  id="decrement" onclick="stepper(this)"> - </button>
-                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
-                            <button  id="increment" onclick="stepper(this)"> + </button>
+                            <button class="cart-qty-plus" type="button" value="+">+</button>
+                           <input type="text" name="qty" min="0" value="0" class="qty form-control">
+                           <button class="cart-qty-minus" type="button" value="-">-</button>
                         </div>
                     </td>
                     <td class="_amount">
@@ -198,9 +199,9 @@
                     <td style="text-align: center;">10%</td>
                     <td>
                         <div class="quantity-container">
-                            <button  id="decrement" onclick="stepper(this)"> - </button>
-                            <input type="number" min="0" max="100" step="1"  value="2" id="quantity"  readonly>
-                            <button  id="increment" onclick="stepper(this)"> + </button>
+                            <button class="cart-qty-plus" type="button" value="+">+</button>
+                            <input type="text" name="qty" min="0" value="0" class="qty form-control">
+                            <button class="cart-qty-minus" type="button" value="-">-</button>
                         </div>
                     </td>
                     <td class="_amount">
@@ -217,7 +218,7 @@
                     <h4>Mã giảm giá</h4>
                     <div class="box">
                         <input type="text">
-                        <button class="btn">Áp dụng mã</button>
+                        <button class="_btn">Áp dụng mã</button>
                     </div>
                 </div>
 

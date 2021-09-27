@@ -373,7 +373,18 @@ header .icons>li{
 }
 
 header .icons .drop-menu ul{
-display: none; 
+
+    display: block;
+    position: absolute;
+    top:100%;
+    left: -170%;
+    width: 23rem;
+    
+    border-radius: 0;
+    z-index: 1000;
+    padding-top: 3rem;
+
+    transform: translateY(200px);
     
     
 }
@@ -385,14 +396,16 @@ header .nav.fix-nav .drop-menu:hover ul{
 
 header .icons .drop-menu:hover ul{
     display: block;
-    position: absolute;
+    /* position: absolute;
     top:100%;
     left: -170%;
     width: 23rem;
 
     border-radius: 0;
     z-index: 1000;
-    padding-top: 3rem;
+    padding-top: 3rem; */
+    transform: translateY(0);
+    transition: all 2s ease;
 }
 
 header .icons .drop-menu ul li a{
@@ -1320,7 +1333,39 @@ body ._order .sort{
 
 
 
-/* ****************** Order Manage Page *************************** */
+/* *********** Change Pass Page ********************** */
+.change_pass{
+    height: 90vh;
+}
+
+.change_pass_container .box{
+    padding: 2rem 2rem;
+    border: .1rem solid #ececec;
+    border-radius: .5rem;
+}
+
+.change_pass_container .box:hover,
+.change_pass_container .box:focus{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.change_pass_container .box label{
+    font-size: 1.5rem;
+}
+
+.change_pass_container .box input{
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    border: .1rem solid #ececec
+}
+.change_pass_container .box small{
+    font-size: 1.2rem;
+
+}
+
+.change_pass_container .box ._btn{
+    width: 100%;
+    border-radius: 0;
+}
 
 
 

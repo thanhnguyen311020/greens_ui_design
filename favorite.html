@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greens | Shop</title>
+    <!-- front anwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style.css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- orderDetail Style -->
+    <link rel="stylesheet" href="css/siteStyle/orderDetailStyle.css">
+    <!-- lightSlide.css link -->
+    <link rel="stylesheet" href="css/lightSlider.css">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- jquery  -->
+    <script src="js/jQuery.js"></script>
+    <!-- lightslider -->
+    <script src="js/lightslider.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="social-call" id="top">
+            <div class="social">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+            <div class="phone">
+                <span>Call +09587663</span>
+            </div>
+        </div>
+
+        <div class="nav" id="navx">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>greens.</a>
+
+            <nav class="navbar">
+                <a href="index.html">Trang Chủ</a>
+                <a href="product.html">Sản Phẩm</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Liên Hệ</a>
+                <a href="Dashboard.html">administrator</a>
+            </nav>
+
+            <div class="icons">
+
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart">
+                    <span>2</span>
+                </a>
+                <a href="cart.html" class="fas fa-shopping-cart">
+                    <span>2</span>
+                </a>
+
+                <li class="fas fa-user-alt drop-menu">
+
+                    <ul>
+                        <li>
+                            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</a>
+                        </li>
+                        <li>
+                            <a href="register.html"><i class="fas fa-sign-in-alt"></i> Đăng Ký</a>
+                        </li>
+                        <li>
+                            <a href="order.html"><i class="fas fa-tasks"></i> Quản lý đơn hàng</a>
+                        </li>
+                        <li>
+                            <a href="account.html"><i class="fas fa-user-cog"></i> Trang cá nhân</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-sign-in-alt"></i> Đăng Xuất</a>
+                        </li>
+                    </ul>
+                </li>
+                <div class="_username">ThanhND</div>
+                <!-- <a href="login.html" class="fas fa-user-alt"></a> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <!-- search-input -->
+        <div class="search-input">
+            <!-- input -->
+            <input type="text" placeholder="Search For Product">
+            <!-- cancel-btn -->
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="titlePage">
+        <h1>Chi tiết đơn hàng</h1>
+        <div class="link">
+            <a href="#">Trang chủ</a> - <a href="#">Đơn hàng</a>
+        </div>
+    </div>
+
+    <section class="_orderDetail" style="min-height: 100vh;">
+
+        <div class="row orderDetail-container m-2">
+
+            
+
+            <table class="col-10 list-detail m-auto mt-5">
+                <tr>
+                    <th>No.</th>
+                    <th></th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá bán</th>
+                    <th>Giảm giá</th>
+                    <th>Tình trạng</th>
+                    <th></th>
+                    <!-- <th class="ratting-btn"> Đánh giá</th> -->
+                </tr>
+                <tr>
+                    <td>104747</td>
+                    <td style="text-align: center;"> <img src="images/product-3.png" alt=""></td>
+                    <td>
+
+                        <h4>Cam sàm hết hạn 0.5kg</h4>
+                    </td>
+                    <td>20.000.đ</td>
+                    <td>2</td>
+                    <td style="color:var(--main); font-weight: 500;">Còn hàng</td>
+                    <td class="ratting-btn"> <button class="fas shopping-cart" ><i class="fas fa-cart-plus"></i> Mua hàng</button> </td>
+                </tr>
+                <tr>
+                    <td>104747</td>
+                    <td style="text-align: center;"> <img src="images/product-1.png" alt=""></td>
+                    <td>
+
+                        <h4>Chuối 0.5kg</h4>
+                    </td>
+                    <td>20.000.đ</td>
+                    <td>2</td>
+                    <td style="color:var(--main); font-weight: 500;">40.000.đ</td>
+                </tr>
+                <tr>
+                    <td>104747</td>
+                    <td style="text-align: center;"> <img src="images/product-9.png" alt=""></td>
+                    <td>
+
+                        <h4>Chuối 0.5kg</h4>
+                    </td>
+                    <td>20.000.đ</td>
+                    <td>2</td>
+                    <td style="color:var(--main); font-weight: 500;">40.000.đ</td>
+                </tr>
+            </table>
+
+
+        </div>
+        <a href="product.html" class="_btn">Tiếp tục mua sắm</a>
+
+    </section>
+
+
+
+
+
+
+    <!-- footer sction starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">japan</a>
+                <a href="#">usa</a>
+                <a href="#">vietnam</a>
+                <a href="#">kore</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review</a>
+                <a href="#">order</a>
+            </div>
+
+            <div class="box">
+                <h3>contac info</h3>
+                <a href="#">+123-343-123</a>
+                <a href="#">+123-343-123</a>
+                <a href="#">copyyouttube@gmail.com</a>
+                <a href="#">copyyouttube@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+                <a href="#">github</a>
+            </div>
+
+        </div>
+
+        <div class="credit">copy right @ 2021 by <span>Internet</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đánh giá sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body rate-container">
+                  
+                    <div class="rating-wrap">
+                        <!-- <h2>Star Rating</h2> -->
+                        <div class="content">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="full"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="sta-4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+
+                        <h4 id="rating-value">0 trên 5</h4>
+                    </div>
+
+                    <div class="comment">
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Đánh giá sản phẩm...." ></textarea>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Đánh giá</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- script custom link -->
+    <script src="js/script.js"></script>
+    <!--  -->
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jqueryScript.js"></script>
+    <script src="js/rating-script.js"></script>
+    <!-- Boostrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

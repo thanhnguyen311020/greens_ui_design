@@ -1,7 +1,9 @@
 :root {
-    --main-bg-color: #28a745;
-    --main-text-color: #fff;
-    --second-text-color: #bbbec5;
+    /* --main-bg-color: #28a745; */
+    --main-bg-color: #fff;
+    --main-text-color: #192a56;
+    /* --second-text-color: #bbbec5; */
+    --second-text-color: #6c757d;
     --second-bg-color: #c1efde;
   }
   
@@ -59,7 +61,9 @@
   
   .navbar{
     background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    height: auto;
+    padding: 1.5rem 1.5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
   }
   
   #sidebar-wrapper {
@@ -69,6 +73,7 @@
     -moz-transition: margin 0.25s ease-out;
     -o-transition: margin 0.25s ease-out;
     transition: margin 0.25s ease-out;
+    border-right: .1rem solid #ececec;
   }
   
   #sidebar-wrapper .sidebar-heading {
@@ -82,7 +87,7 @@
   
   #page-content-wrapper {
     min-width: 100vw;
-    background-color: #fff;
+    background-color:#F0FFF0;
   }
   
   #wrapper.toggled #sidebar-wrapper {
@@ -96,17 +101,20 @@
   
   .list-group-item {
     border: none;
-    padding: 20px 30px;
+    font-weight: 500 !important;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    
   }
   
   .list-group-item.active {
     background-color: transparent;
     color: var(--main-text-color);
-    font-weight: bold;
+    font-weight: bold !important;
     border: none;
   }
   .links:hover{
-    color: #fff;
+    color: #28a745;
   }
   
   @media (min-width: 768px) {
@@ -123,4 +131,98 @@
       margin-left: -15rem;
     }
   }
+
+
+  .dropdown-container {
+    display: none;
+    padding: 0rem 2rem .7rem 3rem;
+  }
+  .dropdown-container>a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1rem;
+    padding: .5rem 0;
+  }
+
+  .dropdown-container>a:hover{
+    color:#28a745;
+  }
+  
+  /* Optional: Style the caret down icon */
+  /* .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+  .table_admin{
+    width: 100%;
+    
+  }
+
+.table_admin th{
+  font-size: 1rem;
+  padding: .5rem 0;
+  border-bottom: .1rem solid #ececec;
+  
+}
+
+.table_admin td{
+  border-bottom: .1rem solid #ececec;
+}
+
+.table_admin tr:hover{
+  background-color: #ececec;
+}
+
+.table_admin img{
+  max-height: 5rem;
+}
+
+
+.table_admin ._control_edit,
+.table_admin ._control_delete{
+  text-decoration: none;
+  font-size: .7rem;
+  padding: .2rem .5rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.table_admin ._control_edit{
+  background-color: #192a56;
+
+}
+.table_admin ._control_delete{
+  background-color: red;
+
+}
+
+.tab_container .control_tab{
+  display: flex;
+  background-color: #fff;
+  border: none !important;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.tab_container .control_tab li{
+  margin: 0 .5rem;
+}
+
+.tab_container .control_tab li button{
+  border: none !important;
+  background-color: #fff;
+  color:#192a56;
+  font-weight: bold ;
+  background-color: #6c757d;
+}
+  
   

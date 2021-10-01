@@ -373,18 +373,7 @@ header .icons>li{
 }
 
 header .icons .drop-menu ul{
-
-    display: block;
-    position: absolute;
-    top:100%;
-    left: -170%;
-    width: 23rem;
-    
-    border-radius: 0;
-    z-index: 1000;
-    padding-top: 3rem;
-
-    transform: translateY(200px);
+    display: none;
     
     
 }
@@ -396,16 +385,16 @@ header .nav.fix-nav .drop-menu:hover ul{
 
 header .icons .drop-menu:hover ul{
     display: block;
-    /* position: absolute;
+    position: absolute;
     top:100%;
     left: -170%;
     width: 23rem;
 
     border-radius: 0;
     z-index: 1000;
-    padding-top: 3rem; */
-    transform: translateY(0);
-    transition: all 2s ease;
+    padding-top: 3rem;
+    /* transform: translateY(0);
+    transition: all 2s ease; */
 }
 
 header .icons .drop-menu ul li a{

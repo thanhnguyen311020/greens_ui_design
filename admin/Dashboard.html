@@ -27,9 +27,9 @@
                     class="list-group-item list-group-item-action bg-transparent links second-text fw-bold  dropdown-btn"><i
                         class="fas fa-chart-line me-2"></i>Sản Phẩm <span class="fas fa-angle-right"></span></a>
                 <div class="dropdown-container">
-                    <a href="#"><i class="fab fa-product-hunt"></i> Danh sách </a>
-                    <a href="#"><i class="fab fa-product-hunt"></i> Nhập liệu</a>
-                    <a href="#"><i class="fab fa-product-hunt"></i> Quảng lý lô hàng</a>
+                    <a href="#"><i class="fab fa-product-hunt"></i> Sản phẩm </a>
+                    <a href="#"><i class="fab fa-product-hunt"></i> Loại hàng</a>
+                    <a href="#"><i class="fab fa-product-hunt"></i> Quản lý lô hàng</a>
                 </div>
                 <a
                     class="list-group-item list-group-item-action bg-transparent links second-text fw-bold  dropdown-btn"><i
@@ -261,6 +261,24 @@
             });
         }
     </script>
+
+<script>
+
+    $('#_list').click(function (e) {
+        console.log("ok")
+        e.preventDefault()
+        $('#myTab li:eq(1) a').tab('show') 
+    })
+
+    $('#_form').click(function (e) {
+        console.log("ok")
+        e.preventDefault()
+        $('#myTab li:eq(0) a').tab('show') 
+    })
+
+
+
+</script>
 </body>
 
 </html>

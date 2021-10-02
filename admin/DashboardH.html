@@ -37,7 +37,7 @@
             <ul>
                 <div class="active-tab"></div>
                 <li class="tooltip-element" data-tooltip="0">
-                    <a href="#" class="active" data-active="0">
+                    <a href="DashboardH.html" class="active" data-active="0">
                         <div class="icon">
                             <i class='bx bx-tachometer'></i>
                             <i class='bx bxs-tachometer'></i>
@@ -51,16 +51,16 @@
                             <i class='bx bx-folder'></i>
                             <i class='bx bxs-folder'></i>
                         </div>
-                        <span class="link hide">Projects</span>
+                        <span class="link hide">Đơn hàng</span>
                     </a>
                 </li>
                 <li class="tooltip-element" data-tooltip="2">
-                    <a href="#" data-active="2">
+                    <a href="productAdmin.html" data-active="2">
                         <div class="icon">
                             <i class='bx bx-message-square-detail'></i>
                             <i class='bx bxs-message-square-detail'></i>
                         </div>
-                        <span class="link hide">Messages</span>
+                        <span class="link hide">Sản phẩm</span>
                     </a>
                 </li>
                 <li class="tooltip-element" data-tooltip="3">
@@ -118,7 +118,7 @@
             </ul>
         </div>
 
-        <div class="sidebar-footer">
+        <!-- <div class="sidebar-footer">
             <a href="#" class="account tooltip-element" data-tooltip="0">
                 <i class='bx bx-user'></i>
             </a>
@@ -138,7 +138,7 @@
                 <span class="show">John Doe</span>
                 <span>Logout</span>
             </div>
-        </div>
+        </div> -->
     </nav>
 
 
@@ -200,11 +200,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                            aria-controls="profile" aria-selected="false">Profile</a>
+                            aria-controls="profile" aria-selected="false">Lịch sử giao dịch</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                            aria-controls="contact" aria-selected="false">Contact</a>
+                            aria-controls="contact" aria-selected="false">Thống kê sản phẩm</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -220,7 +220,11 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                Header
+                                                <h5>Biểu đồ XX</h5>
+                                                <div class="_date">
+                                                    <input type="date" name="" id="">
+                                                    <input type="date" name="" id="">
+                                                </div>
                                             </div>
                                             <div class="card-body">
                                                 <img src="../images/Tim-hieu-ve-Chart-js.png" alt="">
@@ -233,7 +237,12 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                Header
+                                                <h5>Biểu đồ XX</h5>
+                                                <div class="_date">
+                                                    <input type="date" name="" id="">
+                                                    <input type="date" name="" id="">
+                                                   
+                                                </div>
                                             </div>
                                             <div class="card-body">
                                                 <img src="../images/Tim-hieu-ve-Chart-js.png" alt="">
@@ -255,7 +264,11 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                Header
+                                               <h5>Biểu đồ XX</h5>
+                                                <div class="_date">
+                                                    <input type="date" name="" id="">
+                                                  
+                                                </div>
                                             </div>
                                             <div class="card-body">
                                                 <img src="../images/char-pie.jpg" alt="">
@@ -268,7 +281,11 @@
                                     <div class="col-md-12">
                                         <div class="card">
                                             <div class="card-header">
-                                                Header
+                                                <h5>Biểu đồ XX</h5>
+                                                <div class="_date">
+                                                    <input type="date" name="" id="">
+                                                   
+                                                </div>
                                             </div>
                                             <div class="card-body">
                                                 <img src="../images/char-pie.jpg" alt="">
@@ -286,8 +303,157 @@
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    <div class="tab-pane fade tab-history-order" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Biểu đồ XX</h5>
+                                        <div class="_date">
+                                            <input type="datetime-local" name="" id="">
+                                            <input type="datetime-local" name="" id="">
+                                            <button value="Lọc"><i class="fas fa-filter"></i> Lọc</button>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="card-body">
+                                       <table >
+                                           <thead>
+                                               <tr>
+                                                   <th>Mã</th>
+                                                   <th>Khách hàng</th>
+                                                   <th>Sản phẩm</th>
+                                                   <th>Ngày mua</th>
+                                                   <th>Số lượng</th>
+                                                   <th>Giá tiền</th>
+                                                 
+                                               </tr>
+                                           </thead>
+                                           <tbody>
+                                               <tr>
+                                                   <td scope="row">
+                                                       <a href="#">104756</a>
+                                                   </td>
+                                                   <td>Nguyễn Đức Thành</td>
+                                                   <td class="td-product">
+                                                       <img src="../images/product-1.png" alt="">
+                                                       <div class="product-info">
+                                                          <div><a href="#">Chuối 1kg</a></div>
+                                                          <!-- <span>11027</span> -->
+                                                       </div>
+                                                   </td>
+                                                   <td>08:00:20 01-10-2021</td>
+                                                   <td>2</td>
+                                                   <td>42.000.đ</td>
+                                               </tr>
+                                               <tr>
+                                                   <td scope="row">
+                                                       <a href="#">104756</a>
+                                                   </td>
+                                                   <td>Nguyễn Đức Thành</td>
+                                                   <td class="td-product">
+                                                       <img src="../images/product-3.png" alt="">
+                                                       <div class="product-info">
+                                                          <div><a href="#">Chuối 1kg</a></div>
+                                                          <!-- <span>11027</span> -->
+                                                       </div>
+                                                   </td>
+                                                   <td>08:00:20 01-10-2021</td>
+                                                   <td>2</td>
+                                                   <td>42.000.đ</td>
+                                               </tr>
+                                               <tr>
+                                                   <td scope="row">
+                                                       <a href="#">104756</a>
+                                                   </td>
+                                                   <td>Nguyễn Đức Thành</td>
+                                                   <td class="td-product">
+                                                       <img src="../images/product-2.png" alt="">
+                                                       <div class="product-info">
+                                                          <div><a href="#">Chuối 1kg</a></div>
+                                                          <!-- <span>11027</span> -->
+                                                       </div>
+                                                   </td>
+                                                   <td>08:00:20 01-10-2021</td>
+                                                   <td>2</td>
+                                                   <td>42.000.đ</td>
+                                               </tr>
+                                               
+                                           </tbody>
+                                       </table>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        Footer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade tab-product-order" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                        <div class="row mt-3">
+
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Biểu đồ XX</h5>
+                                        <div class="_date">
+                                            <input type="datetime-local" name="" id="">
+                                            <input type="datetime-local" name="" id="">
+                                            <!-- <button value="Lọc"><i class="fas fa-filter"></i> Lọc</button> -->
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="card-body">
+                                       <table >
+                                           <thead>
+                                               <tr>
+                                                   <th>Mã</th>
+                                                   <th>Sản phẩm</th>
+                                                   <th>Tồn kho</th>
+                                                   <th>Lô hàng</th>
+                                                   <th>Lượt mua</th>
+                                                   <th>Doanh thu</th>
+                                                 
+                                               </tr>
+                                           </thead>
+                                           <tbody>
+                                               <tr>
+                                                   <td scope="row">
+                                                       <a href="#">104756</a>
+                                                   </td>
+                                                   <td class="td-product">
+                                                       <img src="../images/product-1.png" alt="">
+                                                       <div class="product-info">
+                                                          <div><a href="#">Chuối 1kg</a></div>
+                                                          <!-- <span>11027</span> -->
+                                                       </div>
+                                                   </td>
+                                                   <td>200</td>
+                                                   <td>Lô MD4</td>
+                                                   <td>200</td>
+                                                   <td>4.000.000.đ</td>
+                                               </tr>
+                                               
+                                               
+                                           </tbody>
+                                       </table>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        Footer
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
                 </div>
             </div>
 

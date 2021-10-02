@@ -59,3 +59,31 @@ function showTooltip() {
 tooltip_elements.forEach((elem) => {
   elem.addEventListener("mouseover", showTooltip);
 });
+
+
+
+var dropdonw_control = document.getElementsByClassName("droplistbtn");
+var dropdownsx = document.getElementsByClassName("dropdown-table");
+    console.log(dropdonw_control.length)
+var j;
+    for(j = 0 ; j < dropdonw_control.length; j++){
+        dropdonw_control[j].addEventListener("click", function(){
+            var dropdownContent = this.nextElementSibling;
+            dropdownContent.classList.toggle("show");
+        })
+    }
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.droplistbtn')) {
+       
+        var i;
+        for (i = 0; i < dropdownsx.length; i++) {
+            var openDropdown = dropdownsx[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
